@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /*Font chữ*/
+    line-height: 1.6; /*Chiều cao dòng*/
+    background-color: #f4f4f4; /*Màu nền của trang*/
+    color: #333; /*Màu chữ*/
+
+
+    padding-top: 62px; /*Khoảng cách từ đầu trang đến nội dung để tránh bị header che khuất*/
+}
+
+
+/* Header */
+.header {
+  position: fixed;/*Cố định header ở trên cùng*/
+  top: 0;/*Căn header vào phía trên cùng của trang*/
+  left: 0;/*Căn header vào phía bên trái của trang*/
+  width: 100%;/*Chiều rộng của header bằng chiều rộng của trang*/
+
+box-sizing: border-box; /*Bao gồm padding và border trong kích thước tổng thể*/
+  z-index: 1;/*Đảm bảo header luôn ở trên cùng các phần tử khác*/
+
+  display: flex; /* Kích hoạt flexbox */
+  flex-direction: row;/*Sắp xếp các phần tử con theo hàng ngang*/
+
+  justify-content: space-between;/*Căn đều các phần tử con ở giữa*/
+  align-items: center;/*Căn giữa các phần tử con theo chiều dọc*/
+  padding: 0 20px;/*Khoảng cách bên trái và bên phải*/
+
+  height: 62px;/*Chiều cao của header*/
+
+  background-color: white; /*Màu nền của header*/
+  border-bottom: 1px solid #eee;/* Đường viền dưới */
+  
+}
+.header__nav ul {
+  display: flex;/*Kích hoạt flexbox*/
+  flex-direction: row;/*Sắp xếp các phần tử con theo hàng ngang*/
+  gap: 20px;/*Khoảng cách giữa các phần tử con*/
+  list-style: none;/*Loại bỏ dấu chấm đầu dòng*/
+  padding-right: 100px;/*Khoảng cách bên phải*/
+}
+.header__nav a{
+  color: black;/*Màu chữ*/
+  text-decoration: none;/*Loại bỏ gạch chân*/
+}
+.header__nav a:hover {
+  color: orange;/*Màu chữ khi hover*/
+  text-decoration: underline;/*Gạch chân khi hover*/
+  transition: all 0.3s ease;/*Hiệu ứng chuyển đổi*/
+}
+
+/* Banner */
+.banner .banner__image{
+  width:100%;
+}
+
+
+.container{
+  padding: 0 10%; /*Khoảng cách bên trái và bên phải*/
+}
+
+/* Dịch vụ nổi bật và về công ty */
+.services {
+  display: flex; /* Kích hoạt flexbox */
+  flex-direction: row; /* Sắp xếp các phần tử con theo hàng ngang */
+  /*align-items: center;  Căn giữa các phần tử con theo chiều dọc */
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+  /* item (phần tử con) */
+  /* content cả nhóm item (toàn bộ nội dung) */
+
+  
+}
+.service-box{
+  position: relative; /* Cho phép sử dụng thuộc tính z-index */
+  flex: 1; /* Cho phép các phần tử con chia đều không gian */
+}
+.service-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.services .service-box > div {
+  justify-items: center; /* Căn giữa các phần tử con theo chiều ngang */
+  position: absolute; /* Cho phép sử dụng thuộc tính z-index */
+  bottom: 10px; /* Nâng phần tử lên 10px */
+  left: 50%; /* Căn giữa phần tử theo chiều ngang */
+  transform: translateX(-50%); /* Dịch chuyển phần tử sang trái 50% để căn giữa */
+  font-weight: bold; /* Chữ đậm */
+  font-size: 24px; /* Chữ lớn hơn */
+}
+
+
+
+.about h2{
+  font-size: 40px;
+  font-weight: lighter;
+  line-height: 80px;
+}
+.about__item div{
+  color: white;
+}
+
+/*làm mờ ảnh */
+.about__item img {
+  filter: brightness(0.7);
+}
+
+/*footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* Căn đều các phần tử con ở giữa */
+  align-items: flex-start; /* Căn giữa các phần tử con theo chiều dọc */
+  background: #ffeb00;   /* nền vàng giống hình */
+  color: #000;           /* chữ đen */
+  padding: 30px 50px;
+  font-size: 20px;
+  line-height: 1.2;/*Chiều cao dòng*/
+  padding: 40px 10%; /*Khoảng cách bên trái và bên phải*/
+}
+.footer__left ul {
+  list-style: none; /*Loại bỏ dấu chấm đầu dòng*/
+  padding: 0; /*Loại bỏ padding*/
+  margin: 0; /*Loại bỏ margin*/
+  font-weight: bold; /*Chữ đậm*/
+}
+
+.footer__left li {
+  margin-bottom: 6px; /*Khoảng cách giữa các phần tử li*/
+}
+
+.footer__center, 
+.footer__right {
+  max-width: 300px; /* hạn chế chiều rộng text */
+}
