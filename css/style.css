@@ -254,6 +254,7 @@ width: 400px;
   }
 
   .footer {
+      display:block;
     font-size: 13px;
     flex-direction: column;
     text-align: center;
