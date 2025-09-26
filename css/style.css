@@ -128,6 +128,7 @@ box-sizing: border-box; /*Bao gồm padding và border trong kích thước tổ
 }
 .footer__left ul {
   list-style: none; /*Loại bỏ dấu chấm đầu dòng*/
+width: 400px;
   padding: 0; /*Loại bỏ padding*/
   margin: 0; /*Loại bỏ margin*/
   font-weight: bold; /*Chữ đậm*/
@@ -139,7 +140,7 @@ box-sizing: border-box; /*Bao gồm padding và border trong kích thước tổ
 
 .footer__center, 
 .footer__right {
-  max-width: 300px; /* hạn chế chiều rộng text */
+  max-width: 400px; /* hạn chế chiều rộng text */
 }
 
 
