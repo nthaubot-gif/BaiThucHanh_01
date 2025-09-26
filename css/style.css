@@ -273,6 +273,9 @@ width: 400px;
   .footer__left {
     margin-bottom: 20px;
     text-align: center;    /* Căn giữa chữ */
+
+        display: flex;
+  justify-content: center;
   }
 
   .footer__left ul {
